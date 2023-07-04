@@ -91,6 +91,7 @@ section > p{
 
 a{
     color: var(--color-white);
+    /* color:#728FCE; */
     transition: var(--transition);
 }
 

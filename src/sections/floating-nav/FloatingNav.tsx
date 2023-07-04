@@ -1,4 +1,4 @@
-import "./floatingNav.css"
+import "./FloatingNav.css"
 const FloatingNav = () => {
   return (
     <section id="floating__nav">
