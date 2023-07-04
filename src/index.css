@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --primary-hue:270;
+    --black-lightness:15%;
+    --dark-brightness:44%;
+    --light-lightness:94%;
+    --white-lightness:100%;
+    --color_primary:hsl(var(--primary-hue) , 89%,41%);
+    --color-white:hsl(0,5%,var(--white-lightness));
+    --color-light:hsl(var(--primary-hue), 5%,var(--light-lightness));
+    --color-black:hsl(var(--primary-hue) , 5% , var(--black-brightness));
+
+    --color-dark : hsl(var(--primary-hue), 5% , var(--dark-brightness))
+
+
+
+    /* general container variables  */
+
+    --container-width-lg : 76%;
+    --container-width-md : 90%;
+
+    /* border radius varibale 0000 */
+
+
+    --border-radius-1 : 1.2rem;
+    --border-radius-2 : 0.8rem;
+    --border-radius-3 : 0.5rem;
+
+
+    /* general transition varibales  */
+
+    --transition : all 500ms ease;
+}
+
+html{
+ scroll-behavior: smooth;   
+}
+
+body{
+    font-family: 'Monsterrate' ,sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+
+   /* ============= General container class ==========*/
+
+
+.container{
+    width: var(--container-width-lg);
+    max-width: 1920px;
+    margin-inline: auto ;
+}
+
+
+/* ================ General section section style  ========= */
+
+section{
+    padding: 10rem 0;
+    background: var(--color-light);
+    transition:  var(--transition);
+}
+
+section:nth-child(even){
+    background: var(--color-white);
+}
+
+section >h2{
+
+    text-align: center;
+}
+
+section > p{
+    text-align: center;
+    margin:  0.5rem auto 4rem;
+    width: 40%;
+}
+
+
+/* general sectins styles  */
+
+a{
+    color: var(--color-white);
+    transition: var(--transition);
+}
+
+
+
+/* general heading styles  */
+
+h1,h2,h3,h4,h5,h6{
+    line-height: 1.1;
+    color: var(--color-black);
+}
+
+
+h1{
+    font-size: 3rem;
+
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.6rem;
+
+}
+ h4{
+ font-size: 1.1rem;   
+}
+
+h5{
+    font-size: 0.95rem;
+}
+
+
+h6{
+    font-size: 0.8rem;
+}
+
+
+
+/* general styles for images  */
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* general button styles  */
+
+.btn{
+    display: inline-block;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color-light);
+    color: var(--color-black);
+    padding: 0.6rem 2.5rem;
+    border: 2px solid transparent;
+    border-radius: var(--border-radius-2);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border-color: var(--color-light);
+    transform: translateY(-0.5rem);
+}
+
+.btn.white{
+    background: var(--color-white)
+    ;
+}
+
+.btn.white:hover{
+    background: transparent;
+    border-color: var(--color-white);
+}
+.btn.primary{
+    background: var(--color_primary);
+
+    /* text color alwayss white */
+    color: white;
+
+}
+
+
+.btn.primary:hover{
+    background-color: transparent;
+    border-color: var(--color_primary);
+    color: var(--color-primary);
+}
+
+.btn.sm{
+    padding: 0.5rem 1.2rem;
+}
+
+
+ /* Media query for tablests less than 1024px screens  */
+
+@media screen and(max-width:1024px) {
+    body{
+        font-size: 1rem;
+    }
+    .container{
+        width: var(--container-width-md);
+    }
+    section{
+        padding: 8rem 0;
+    }
+
+    section > p{
+        width: 72%;
+        margin-bottom: 3rem;
+    }
+    h1{
+        font-size: 2rem;
+
+    }
+    
+}
+
+
+
+/* Medaia query for screens less than 600px */
+
+@media screen and(max-width:600px) {
+    body{
+        font-size: 2.4rem;
+    }
+   h2{
+    font-size: 2.4rem;
+   }
+   h3{
+    font-size: 1.4rem;
+   }
+    h4{
+        font-size: 1rem;
+    }
+    .btn{
+        padding: 0.6rem 1.5rem;
+    }
+
+    section > p {
+        width: var(--container-width-md);
+    }
+}
