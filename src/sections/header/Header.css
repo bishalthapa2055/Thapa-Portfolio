@@ -1,0 +1,226 @@
+.main__header{
+    margin-top: 5rem;
+    height: calc(100vh - 5rem);
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-color: var(--color-white);
+    transition: var(--transition);
+}
+
+
+.main__header__container{
+    display:  grid;
+    grid-template-columns: 60% 40%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.main__right__container{
+    /* background-color: aquamarine; */
+    display: grid;
+    /* justify-content: flex-end; */
+    place-items: center;
+    position: relative;
+    height: auto;
+}
+
+
+.image__container{
+    width: 20rem;
+    height: 26rem;
+    border-radius: 9rem 9rem 2rem 2rem;
+    overflow: hidden;
+    align-items: right;
+    position: relative;
+   
+}
+
+
+
+.main__left__container{
+    margin-top: -3rem;
+}
+
+.main__left__container h1{
+    margin-bottom: 0rem;
+    font-weight: 500;
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+
+.main__left__container h2{
+font-size: 2.5rem;
+font-weight: 400;
+}
+
+.main__left__container p{
+    padding : 0.5rem 0 ;
+    font-size: 2rem;
+    gap: 1rem;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.socials__container{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.socials__container a{
+    color: rgb(77, 253, 74);
+}
+
+.socials__container a:hover{
+    transition: var(--transition);
+    transform: translateY(10%);
+    
+}
+
+
+
+
+/*=================   Media Queries  ======= ===*/
+
+
+
+@media screen and (max-width:1024px) {
+    header{
+        margin-top: 0;
+        height: 100%;
+    }
+    .main__header__container{
+        gap: 1rem;
+    }
+
+    .image__container{
+        width: 15rem;
+        height: 22rem;
+        border-radius: 9rem 9rem 2rem 2rem;
+        overflow: hidden;
+        align-items: right;
+        position: relative;
+       
+    }
+    .main__left__container{
+        margin-top: 0;
+    }
+
+    .main__left__container h1{
+        margin-bottom: 0rem;
+        font-weight: 500;
+        font-size: 2.6rem;
+        margin-top: 1rem;
+    }
+    
+    .main__left__container h2{
+    font-size: 2rem;
+    font-weight: 400;
+    }
+    
+    .main__left__container p{
+        padding : 0.5rem 0 ;
+        font-size: 1.8rem;
+        display: inline-block;
+        font-weight: 400;
+    }
+    
+    .socials__container{
+        display: flex;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    
+    .socials__container a{
+        color: rgb(77, 253, 74);
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    header{
+        height: 100%;
+        margin-top: 0;
+    }
+    .main__header__container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .main__right__container{
+        
+        display: grid;
+        /* justify-content: flex-end; */
+        place-items: center;
+        position: relative;
+        height: auto;
+        order: -1;
+        margin-top: 1.5rem;
+    }
+
+
+    .image__container{
+        
+        width: 15rem;
+        height: 18rem;
+        border-radius: 9rem 9rem 2rem 2rem;
+        overflow: hidden;
+        align-items: right;
+        position: relative;      
+    }
+
+    .main__left__container{
+        
+        display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+    }
+
+    .main__left__container h1{
+        margin-bottom: 0rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+    
+    .main__left__container h2{
+        margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 200;
+    }
+    
+    .main__left__container p{
+        padding : 0.5rem  0 ;
+        font-size: 1.2rem;
+        display: inline-block;
+        font-weight: 400;
+    }
+    
+    .socials__container{
+        display: flex;
+        gap: 1rem;
+        margin-top: 1.2rem;
+        
+        justify-content: center;
+    }
+    
+    .socials__container a{
+        color: rgb(77, 253, 74);
+    }
+   
+  
+
+
+}

@@ -1,4 +1,4 @@
-*{
+* , *::before , *::after{
     margin: 0;
     padding: 0;
     border: 0;
@@ -26,8 +26,9 @@
 
     /* general container variables  */
 
-    --container-width-lg : 76%;
+    --container-width-Lg : 80%;
     --container-width-md : 90%;
+    --container-width-large: 80%;
 
     /* border radius varibale 0000 */
 
@@ -50,6 +51,7 @@ body{
     font-family: 'Monsterrate' ,sans-serif;
     font-size: 0.9rem;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 
@@ -57,9 +59,10 @@ body{
 
 
 .container{
-    width: var(--container-width-lg);
+    width: var(--container-width-large);
     max-width: 1920px;
     margin-inline: auto ;
+ 
 }
 
 

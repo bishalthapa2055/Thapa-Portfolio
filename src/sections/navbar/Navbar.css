@@ -14,13 +14,14 @@ nav{
 
 
 
-.nav__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center ;
-    gap: 20rem;
-  
-  }
+.navbar__container {
+display: flex;
+height: 100%;
+justify-content: space-between;
+align-items: center;
+position: relative;
+/* gap: 10rem; */
+}
 
 .nav__logo{
     width: 2.5rem;
@@ -38,7 +39,7 @@ display: flex;
 #theme__icon{
     background: transparent;
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     cursor: pointer
 }
 
