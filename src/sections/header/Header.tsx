@@ -11,20 +11,23 @@ const Header = () => {
         <div className="main__left__container"  >
           <h2>Hy! I am</h2>
           <h1>Er. Bishal Thapa</h1>
-          <p>Working As : {''}
+          <p>Designation : {''}
             <p style={{ color: "teal" }}>
 
-              <Typical
+              {/* <Typical
                 steps={['NODE DEVELOPER', 5000, 'REACT DEVELOPER', 5000, 'MERN STACK DEVELOPER', 5000]}
                 loop={Infinity}
                 wrapper="b"
-              />
+              /> */}
+
+              MERN STACK DEVELOPER
             </p>
           </p>
           <button className="btn primary">Hire Me</button>
           <div className="socials__container" >
 
             <a href="tel:1234567890">
+              
               <WhatsAppIcon style={{ fontSize: '2.5rem', fontWeight: 400 }} />
             </a>
             <a href="mailto:example@example.com">
