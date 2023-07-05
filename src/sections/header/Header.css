@@ -196,13 +196,13 @@ font-weight: 400;
     }
     
     .main__left__container h2{
-        margin-top: 1rem;
+        /* margin-top: 0.5rem; */
     font-size: 1.4rem;
     font-weight: 200;
     }
     
     .main__left__container p{
-        padding : 0.5rem  0 ;
+        padding : 0.2rem  0 ;
         font-size: 1.2rem;
         display: inline-block;
         font-weight: 400;
