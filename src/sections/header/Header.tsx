@@ -14,13 +14,13 @@ const Header = () => {
           <p>Designation : {''}
             <p style={{ color: "teal" }}>
 
-              {/* <Typical
+              <Typical
                 steps={['NODE DEVELOPER', 5000, 'REACT DEVELOPER', 5000, 'MERN STACK DEVELOPER', 5000]}
                 loop={Infinity}
                 wrapper="b"
-              /> */}
+              />
 
-              MERN STACK DEVELOPER
+              {/* MERN STACK DEVELOPER */}
             </p>
           </p>
           <button className="btn primary">Hire Me</button>
