@@ -3,6 +3,7 @@ import CV from "../../assets/check.pdf";
 import DownloadIcon from '@mui/icons-material/Download';
 import data from "./data";
 import Card from "../../Components/Card";
+
 const About = () => {
   return (
     <section id='about'>

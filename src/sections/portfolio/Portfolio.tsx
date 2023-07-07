@@ -16,7 +16,7 @@ const Portfolio = () => {
               </div>
               <div className="portfolio__details">
                 <h2>{item.title}</h2>
-                <h> Role : {item.role}</h>
+                <h4> Role : {item.role}</h4>
                 <p>{item.desc}</p>
                 <a href={item.link} target="_blank" className="btn primary">Demo
                 </a>
