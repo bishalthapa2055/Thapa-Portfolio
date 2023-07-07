@@ -1,14 +1,35 @@
+// import "./card.css"
+
+// const Card = ({children , className }) => {
+//   return (
+//     <>
+//     <article className={`card ${className}`} 
+//     // onClick={onClick}
+//     >
+//         {children}
+
+//     </article>
+//     </>
+//   )
+// }
+
+// export default Card
+
+import React , {ReactNode} from "react"
 import "./card.css"
 
-const Card = ({children , className , onClick}) => {
-  return (
-    <>
-    <article className={`card ${className}`} onClick={onClick}>
-        {children}
-
-    </article>
-    </>
-  )
+type Cardprops ={
+  children : ReactNode;
+  className ?:string;
+  onClick ?:() => void
 }
 
-export default Card
+const Card : React.FC<Cardprops> = ({children , className , onClick}) =>{
+  return (
+    <article className={`card ${className}`} onClick={onClick}>
+      {children}
+    </article>
+  );
+}
+
+export default Card ;
