@@ -35,4 +35,47 @@ gap: 2rem;
     transition: var(--transition);
     transform: translateY(-15%);
     cursor: pointer;
+    font-size: "60px";
+     color: "#E1306C" 
+}
+.header__contact{
+    display: none;
+}
+.contact__left p{
+    margin-top: -1rem;
+}
+.icons{
+    margin-top: -1rem;
+}
+
+@media screen and (max-width:1024px) {
+    
+    
+    .header__contact{
+        display: block;
+        text-align: center;
+    }
+    .contact__left{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .contact__left p{
+        margin-top: -1rem;
+    }
+    .contact__container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .icons__features:hover{
+        transition: var(--transition);
+        transform: translateY(-15%);
+        cursor: pointer;
+    }
+    .icons__features{
+        font-size: 20rem;
+    }
+    .contact__right{
+        margin-top: -2rem;
+    }
 }

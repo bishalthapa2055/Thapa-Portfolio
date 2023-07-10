@@ -13,15 +13,24 @@ const Contact: FC = (): JSX.Element => {
     <section id="contact">
 
       <div className="container contact__container">
+
         <div className="contact__left">
 
 
-          <h1 className="contact__header">Get In touch</h1>
+          <h1 className="contact__header">Get In Touch</h1>
           <p>Shoot me a message via any of the links below </p>
           <div className="icons">
-            <WhatsAppIcon sx={{fontSize:"45px" , color:"#128c7e" }}  className="icons__features"/>
-            <InstagramIcon sx={{fontSize:"45px" , color:"#E1306C" }}  className="icons__features"/>
-            <FacebookIcon  sx={{fontSize:"45px"  , color:"#0165E1"}} className="icons__features"/>
+            <a href="tel:+9779840527839">
+              <WhatsAppIcon sx={{ fontSize: "60px", color: "#128c7e" }} className="icons__features" />
+            </a>
+            <a href="https:www.instagram.com">
+
+              <InstagramIcon sx={{ fontSize: "60px", color: "#E1306C" }} className="icons__features" />
+            </a>
+            <a href="https:www.facebook.com">
+
+              <FacebookIcon sx={{ fontSize: "60px", color: "#0165E1" }} className="icons__features" />
+            </a>
 
           </div>
 
@@ -50,9 +59,9 @@ const Contact: FC = (): JSX.Element => {
                   },
                 });
 
-                values.email="",
-                values.name="",
-                values.message=""
+                values.email = "",
+                  values.name = "",
+                  values.message = ""
 
 
 
@@ -96,7 +105,8 @@ const Contact: FC = (): JSX.Element => {
                   onChange={handleChange}
                   type="text"
                   value={values.name}
-                  variant="outlined" />
+                  variant="outlined"
+                />
 
 
                 <TextField
