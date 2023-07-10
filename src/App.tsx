@@ -22,7 +22,7 @@ const App = () => {
       <FAQs />
       <Contact />
       <Footer />
-      <FloatingNav />
+      {/* <FloatingNav /> */}
     </main>
   )
 }
