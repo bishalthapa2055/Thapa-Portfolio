@@ -68,6 +68,10 @@ color: white;
     .icon__container__details{
         font-size: 2rem;
     }
+    footer{
+        padding-top: 0rem;
+        padding-bottom: 5rem;
+    }
     
 
 
@@ -86,5 +90,9 @@ color: white;
         justify-content: center;
         align-items: center;
         color: white;
+    }
+    footer{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 }
