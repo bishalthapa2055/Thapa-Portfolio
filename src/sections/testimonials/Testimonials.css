@@ -1,4 +1,33 @@
+
+
+.testimonials__container{
+text-align: center;
+    
+}
+
+/* .swipper__image{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+} */
+
 .swiper {
-    width: 600px;
-    height: 300px;
-  }
+  width: 100%;
+  height: auto;
+  
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+}
+
