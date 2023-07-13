@@ -1,33 +1,130 @@
-
-
-.testimonials__container{
-text-align: center;
-    
-}
-
-/* .swipper__image{
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  overflow: hidden;
-} */
-
-.swiper {
+  .swiper {
+  /* width: 300px; */
   width: 100%;
-  height: auto;
-  
+  height: 60%;
+  position: relative;
+  margin: 0;
+  margin-bottom: 0;
+  background: transparent ;
+  /* margin-bottom: 10rem; */
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 300px;
+  width: 350px;
   height: 300px;
+  margin: 5rem 0;
+  background: transparent;
 }
 
 .swiper-slide img {
   display: block;
-  width: 10rem;
-  height: 10rem;
+  width: 30%;
+   width: 5rem;
+  height: 5rem;
+  border-radius: 60px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
+.tesimonials__container{
+  display: grid;
+  place-items: center;
+  text-align: center;
+  place-content: center;
+
+}
+
+.testimonials__container h1 , p {
+  text-align: center;
+}
+
+.tesimonials__container p{
+  margin-top: 1rem;
+}
+.mySwiper{
+  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* left: 5%; */
+  
+}
+
+.card.cardd {
+/* display: grid; */
+/* place-items: center; */
+}
+.card.image__test{
+  width: 20rem;
+  height: 20rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card.cardd {
+  background-color: rgb(115, 252, 161);
+}
+
+.image__test{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+
+
+.details{
+  display: flex;
+  flex-direction: column;
+}
+.left__icon{
+  display: flex;
+  flex-direction: start;
+}
+
+.right__icon{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.foot__content{
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.name{
+  /* display: flex; */
+  flex-direction: start ;
+}
+.para{
+  padding-top: 1rem;
+}
+
+@media screen and (max-width :600px) {
+
+  .swiper {
+    /* width: 300px; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0rem 0;
+    margin-bottom: 0;
+    background: transparent ;
+    /* margin-bottom: 10rem; */
+  }
+
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 400px;
+    margin: 2rem 0;
+    background: transparent;
+  }
+  .para{
+    margin-top: 0.5rem;
+  }
+  
+}
