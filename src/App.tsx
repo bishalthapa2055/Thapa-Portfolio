@@ -1,5 +1,6 @@
 
 import About from "./sections/about/About";
+
 import Contact from "./sections/contact/Contact";
 import FAQs from "./sections/faqs/FAQs";
 import FloatingNav from "./sections/floating-nav/FloatingNav";
@@ -24,6 +25,7 @@ const App = () => {
       <Contact />
       <Footer />
       <FloatingNav />
+     
     </main>
   )
 }
