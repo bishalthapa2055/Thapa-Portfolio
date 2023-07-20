@@ -6,6 +6,8 @@ import { useSnackbar } from 'notistack';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import axios from "axios";
+import { configuration } from "../../config";
 
 const Contact: FC = (): JSX.Element => {
   const { enqueueSnackbar } = useSnackbar();
@@ -45,19 +47,24 @@ const Contact: FC = (): JSX.Element => {
             validationSchema={Yup.object().shape({
               name: Yup.string().required("Please enter your Name"),
               email: Yup.string().email("Email must be valid").required("Enter your email address"),
-              message: Yup.string().max(50).required("Message field is required.")
+              message: Yup.string().max(250).required("Message field is required.")
             })}
             onSubmit={async (values) => {
               try {
                 //api calls
-                // alert("submitteed")
-                enqueueSnackbar('Message sent sucessfully', {
-                  variant: 'success',
-                  anchorOrigin: {
-                    vertical: 'top',
-                    horizontal: 'right',
-                  },
-                });
+                const result = await axios.post(configuration.apiUrlMessage, values);
+                console.log(result)
+                if (result) {
+
+                  // alert("submitteed")
+                  enqueueSnackbar('Message sent sucessfully', {
+                    variant: 'success',
+                    anchorOrigin: {
+                      vertical: 'top',
+                      horizontal: 'right',
+                    },
+                  });
+                }
 
                 values.email = "",
                   values.name = "",
