@@ -7,9 +7,10 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import axios from "axios";
-import { configuration } from "../../config";
+import { configuration } from "../../config/index.tsx";
 
-const Contact: FC = (): JSX.Element => {
+
+const Contact = (): JSX.Element => {
   const { enqueueSnackbar } = useSnackbar();
   return (
     <section id="contact">
@@ -52,8 +53,10 @@ const Contact: FC = (): JSX.Element => {
             onSubmit={async (values) => {
               try {
                 //api calls
+                // console.log(values)j
+               
                 const result = await axios.post(configuration.apiUrlMessage, values);
-                console.log(result)
+               
                 if (result) {
 
                   // alert("submitteed")

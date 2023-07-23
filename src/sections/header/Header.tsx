@@ -4,6 +4,12 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Typical from 'react-typical';
 import GitHubIcon from '@mui/icons-material/GitHub';
 const Header = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <header className="main__header">
       <div className="container main__header__container">
@@ -23,17 +29,17 @@ const Header = () => {
               {/* MERN STACK DEVELOPER */}
             </p>
           </p>
-          <button className="btn primary">Hire Me</button>
+          <button className="btn primary" onClick={scrollToContact }>Hire Me</button>
           <div className="socials__container" >
 
-            <a href="tel:1234567890">
+            <a href="tel:+9779840527839" target="_blank" rel="noopener noreferrer">
               
               <WhatsAppIcon style={{ fontSize: '2.5rem', fontWeight: 400 }} />
             </a>
-            <a href="mailto:example@example.com">
+            <a href="https://github.com/bishalthapa2055" target="_blank" rel="noopener noreferrer">
               <GitHubIcon style={{ fontSize: '2.5rem', fontWeight: 400 }} />
             </a>
-            <a href="mailto:example@example.com">
+            <a href="https://linkedin.com/in/bishalthapa2055" target="_blank" rel="noopener noreferrer">
               <LinkedInIcon style={{ fontSize: '2.5rem', fontWeight: 400 }} />
             </a>
 
