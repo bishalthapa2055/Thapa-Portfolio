@@ -16,11 +16,11 @@ const Footer = () => {
 
 
           <div className="icon__container">
-            <a href="https://github.com/bishalthapa2055"  className="icon__container__details" >
+            <a href="https://github.com/bishalthapa2055" target="_blank" rel="noopener noreferrer" className="icon__container__details" >
               <GitHubIcon />
             </a>
 
-            <a href="" className="icon__container__details">
+            <a href="https://linkedin.com/in/bishalthapa2055" target="_blank" rel="noopener noreferrer" className="icon__container__details">
 
               <LinkedInIcon />
             </a>
@@ -29,15 +29,15 @@ const Footer = () => {
 
               <MailOutlineIcon />
             </a>
-            <a href="" className="icon__container__details">
+            <a href="tel:+9779840527839" target="_blank" rel="noopener noreferrer" className="icon__container__details">
               <WhatsAppIcon />
 
             </a>
-            <a href="" className="icon__container__details">
+            <a href="https://instagram.com/bishalthapab989?igshid=ZDc4ODBmNjlmNQ==" className="icon__container__details" target="_blank" rel="noopener noreferrer">
 
               <InstagramIcon />
             </a>
-            <a href="" className="icon__container__details" >
+            <a href="https://www.facebook.com/profile.php?id=100009473409674&mibextid=ZbWKwL" className="icon__container__details" target="_blank" rel="noopener noreferrer">
 
               <FacebookIcon />
             </a>

@@ -35,6 +35,11 @@ article p{
     margin-top: 0.8rem;
 }
 
+#faqs .detailss {
+    /* Your styles here */
+    margin-top: 1rem;
+  }
+
 
 @media screen and (max-width :1024px) {
 .faqs__wrapper{
@@ -42,4 +47,14 @@ article p{
     grid-template-columns: 1fr;
 }
     
+}
+
+@media screen and (max-width : 600px) {
+    #faqs .detailss {
+        /* Your styles here */
+       /* margin: 0; */
+       margin-inline: auto;
+       padding: 0px ;
+       
+      }
 }

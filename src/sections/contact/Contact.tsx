@@ -26,11 +26,11 @@ const Contact = (): JSX.Element => {
             <a href="tel:+9779840527839">
               <WhatsAppIcon sx={{ fontSize: "60px", color: "#128c7e" }} className="icons__features" />
             </a>
-            <a href="https:www.instagram.com">
+            <a href="https://instagram.com/bishalthapab989?igshid=ZDc4ODBmNjlmNQ=="  target="_blank" rel="noopener noreferrer">
 
               <InstagramIcon sx={{ fontSize: "60px", color: "#E1306C" }} className="icons__features" />
             </a>
-            <a href="https:www.facebook.com">
+            <a href="https://www.facebook.com/profile.php?id=100009473409674&mibextid=ZbWKwL"  target="_blank" rel="noopener noreferrer">
 
               <FacebookIcon sx={{ fontSize: "60px", color: "#0165E1" }} className="icons__features" />
             </a>

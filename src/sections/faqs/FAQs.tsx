@@ -13,7 +13,7 @@ const FAQs = () => {
       <section id="faqs">
 
         <h2>Frequently Asked Questions</h2>
-        <p>Here are some questions I usually get.Click to toggle the answer, and if you still have more questions, shoot mea a message from the contact section!</p>
+        <p className="detailss">Here are some questions I usually get.Click to toggle the answer, and if you still have more questions, shoot mea a message from the contact section!</p>
         <div className="container faqs__container">
           <div className="faqs__wrapper">
           {data.map(({ id , question, answer }) => {
