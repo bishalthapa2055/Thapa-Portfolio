@@ -53,6 +53,8 @@
 
 .about__right p{
     margin-bottom: 0.8rem;
+    text-align: start;
+    /* align-items: start; */
 }
 
 .about__right .btn{
