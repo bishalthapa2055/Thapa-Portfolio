@@ -9,6 +9,10 @@
     gap: 1rem;
     align-items: flex-start;
 }
+.service p {
+    text-align: left;
+    justify-content: left;
+}
 
 .service__icon{
     font-size: 1.5rem;

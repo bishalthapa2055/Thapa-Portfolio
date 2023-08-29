@@ -1,22 +1,27 @@
 import {SiAdobexd} from "react-icons/si";
 import {RiReactjsLine} from "react-icons/ri"
-import {FaServer} from "react-icons/fa"
-import {AiFillAppstore} from "react-icons/ai"
 
+import { FaNodeJs}  from "react-icons/fa"
+import { FaFigma} from "react-icons/fa"
+import { BsDatabase}  from "react-icons/bs"
+import { AiOutlineCloudServer}  from "react-icons/ai"
 
 
 const data = [
     {
-        id :1 , icon:<SiAdobexd />, title :"UI/UX design" , desc :"kljjfdkaj"
+        id :1 , icon:<RiReactjsLine />, title :"FRONTEND DEVELOPMENT" , desc :"HTML , CSS , JAVASCRIPT , REACT MUI ,REACTJS , TYPESCRIPT"
     },
     {
-        id :2 , icon:<RiReactjsLine />, title :"UI/UX design" , desc :"kljjfdkaj"
+        id :2 , icon:<FaNodeJs />, title :"BACKEND DEVELOPMENT" , desc :"NODE JS , EXPRESS JS , TYPESCRIPT"
     },
     {
-        id :3 , icon:<FaServer />, title :"UI/UX design" , desc :"kljjfdkaj"
+        id :3 , icon:<FaFigma />, title :"UI/UX design" , desc :"FIGMA , DRAW IO , CANVA"
     },
     {
-        id :4 , icon:<AiFillAppstore />, title :"UI/UX design" , desc :"kljjfdkaj"
+        id :4 , icon:<BsDatabase />, title :"DATABASE MANAGEMENT" , desc :"MY-SQL , MONGO DB"
+    },
+    {
+        id :4 , icon:<AiOutlineCloudServer />, title :"SERVER MANAGEMENT" , desc :"AMAZON WEB SERVERICE (AWS)"
     },
     
 

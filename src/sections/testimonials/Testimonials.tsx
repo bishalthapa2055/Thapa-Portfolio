@@ -20,7 +20,7 @@ export default function Testimonials() {
       <section>
 
         <div className="container testimonials__container">
-          <h1>Whats My Client's Say</h1>
+          <h1>Whats My Client's /  Friends  Say</h1>
           <p className='para'>These are unbiased testimonials from some of my friends/clients...</p>
           <Swiper
             effect={'coverflow'}
@@ -75,7 +75,7 @@ export default function Testimonials() {
                               {item.name}
                             </h4>
                             <small>{item.designation}</small>
-                            <h6>Bitpoint</h6>
+                            <h6>{item.company}</h6>
                           </div>
                         </div>
                       </Card>
