@@ -12,7 +12,7 @@ const data = [
         id :1 , icon:<RiReactjsLine />, title :"FRONTEND DEVELOPMENT" , desc :"HTML , CSS , JAVASCRIPT , REACT MUI ,REACTJS , TYPESCRIPT"
     },
     {
-        id :2 , icon:<FaNodeJs />, title :"BACKEND DEVELOPMENT" , desc :"NODE JS , EXPRESS JS , TYPESCRIPT"
+        id :2 , icon:<FaNodeJs />, title :"BACKEND DEVELOPMENT" , desc :"NODE JS , EXPRESS JS , TYPESCRIPT , PYTHON , REDIS "
     },
     {
         id :3 , icon:<FaFigma />, title :"UI/UX design" , desc :"FIGMA , DRAW IO , CANVA"

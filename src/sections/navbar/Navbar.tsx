@@ -22,7 +22,9 @@ const Navbar = () => {
                 <>
                   <li key={id}>
                     <a href={link} >
-                      {title}
+                      <h5>
+                        {title}
+                      </h5>
                     </a>
                   </li>
                 </>
@@ -31,9 +33,9 @@ const Navbar = () => {
           }
         </ul>
 
-        <button id="theme__icon">
+        {/* <button id="theme__icon">
           <ColorLensIcon />
-        </button>
+        </button> */}
 
       </div>
 
