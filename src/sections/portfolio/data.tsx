@@ -1,11 +1,11 @@
 
 
-const portfolioImage = 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80'
 
 const data = [
-    { id: 1, link :"#", image:portfolioImage , title: "Kindship", desc: "Description of the app that you develpped during you time to show some project to other ", role: "Email Tempate" },
-    { id: 2,link :"#" ,image:portfolioImage , title: "Angel Korean Basha", desc: "Angle korean Basha", role: "Node.js && React.js" },
-    { id: 3,  link :"#",image: portfolioImage, title: "Fitness App", desc: "Fintss App", role: "Node.js && React.js"}
+    { id: 1, link: "https://www.kindship.com.au/", image: "https://angelkorean.s3.ap-southeast-1.amazonaws.com/profile/1693806232641.png", status: "published", title: "Kindship", desc: "Kindship is a type of Social Media App developed and targeted for Disabled people.", role: "Email Tempate" },
+    { id: 2, link: "https://angelkorean.com/", image: "https://angelkorean.s3.ap-southeast-1.amazonaws.com/profile/1693806269651.png", status: "published", title: "Angel Korean Basha", desc: "Angle Korean Basha is an institue that teaches korean langauage and take exam in computerized format", role: "Full Stack Developer" },
+    { id: 3, link: "#", image: "https://angelkorean.s3.ap-southeast-1.amazonaws.com/profile/1693807034400.png", status: "draft", title: "Fitness App", desc: "App developed to manage the membership details of each individuals as Customer Relation Management", role: "Full Stack Developer" },
+    { id: 4, link: "#", image: "https://angelkorean.s3.ap-southeast-1.amazonaws.com/profile%2F1693806139976.png", status: "ongoing", title: "DriveX", desc: "Australian Based Project as Online Booking Service where general users who are willing to learn driving can be fulfilled by hiring driving individually.", role: "Backend Developer" }
 ]
 
 

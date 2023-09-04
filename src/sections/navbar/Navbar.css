@@ -20,6 +20,7 @@ height: 100%;
 justify-content: space-between;
 align-items: center;
 position: relative;
+right: 0.5rem;
 /* gap: 10rem; */
 }
 
@@ -34,7 +35,9 @@ position: relative;
 display: flex;
  gap: 3.5rem;
 }
-
+.nav__menu :hover {
+    color:  rgb(0, 0, 0);
+}
 
 #theme__icon{
     background: transparent;

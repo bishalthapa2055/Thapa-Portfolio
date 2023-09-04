@@ -12,6 +12,9 @@
     cursor: pointer;
     border-radius: 1rem;
 }
+.faq p{
+    text-align: left;
+}
 
 .faq div {
     display: flex;
